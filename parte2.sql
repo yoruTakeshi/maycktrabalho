@@ -55,5 +55,20 @@ insert into itens_pedido values
 (null, null, null, '143', '433.00', '4332.67');
 
 update clientes
-set nome
-where nome='marcus';
+set nome = 'xd'
+where id=4;
+
+update produtos
+set nome = 'produto novo'
+where id=6;
+
+update produtos
+set nome = 'novo produto no lugar do produto velho'
+where id=8;
+
+update pedidos
+set valor_total = '613.00'
+where numero_pedido=1;
+
+delete from produtos where id = 1;
+delete from produtos where id = 2;
